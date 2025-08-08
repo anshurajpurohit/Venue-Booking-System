@@ -1,0 +1,694 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form Styles */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Profile & Booking Details */
+.profile-box, .booking-box {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Venue Cards */
+.venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.venue-card {
+    width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.venue-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.venue-card .card-details {
+    padding: 15px;
+}
+
+.venue-card .card-details h3 {
+    margin: 10px 0;
+}
+
+.venue-card .card-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.venue-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.venue-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 1s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: auto;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* style.css */
+
+/* Header */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Image Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%; /* Make images responsive */
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    animation: slide 10s infinite; /* Slide every 15 seconds */
+}
+
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Venues Section */
+.venues {
+    margin: 20px;
+}
+
+.venue-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.venue-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(30% - 20px); /* Three items in a row with spacing */
+}
+
+.venue-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+
+/* style.css */
+
+/* General Navbar Styles */
+.navbar, .admin-navbar {
+    background-color: #2c3e50; /* Dark color for the navbar */
+    padding: 10px 20px;
+}
+
+.navbar-container, .admin-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust as necessary */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar-logo, .admin-navbar-logo {
+    color: #ecf0f1; /* Light color for the logo */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links, .admin-navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li, .admin-navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a, .admin-navbar-links a {
+    color: #ecf0f1; /* Light color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover, .admin-navbar-links a:hover {
+    color: #3498db; /* Highlight color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-links, .admin-navbar-links {
+        flex-direction: column;
+        display: none; /* Hide links initially */
+        position: absolute;
+        background-color: #2c3e50;
+        width: 100%;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+    }
+
+    .navbar-links.show, .admin-navbar-links.show {
+        display: flex; /* Show links on toggle */
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+    }
+}
+
+
+
+/* About Us and Contact Pages */
+.about-us, .contact {
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack menu items */
+    }
+
+    header nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Space out menu items */
+    }
+}
+
+
+/* Header Styles */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Bootstrap dark color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+.navbar {
+    background-color: #333; /* Change this to your navbar background color */
+}
+
+.navbar-links a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px;
+}
+
+.profile-logo {
+    width: 30px; /* Adjust width of the logo as needed */
+    height: 30px; /* Adjust height of the logo as needed */
+    filter: brightness(0) invert(1); /* Makes the logo white */
+}
+
+.profile-logo:hover {
+    opacity: 0.8; /* Optional: add hover effect */
+}
+
+
+
+/* Button styles */
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar-heading {
+    color: #ffc107;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+/* Main content styling */
+.main {
+    margin-left: 200px; /* Adjust according to sidebar width */
+    padding: 20px;
+}
+
+.card {
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    .main {
+        margin-left: 0; /* Reset margin on smaller screens */
+    }
+}
+
+
+
+.venue-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.venue-detail img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.venue-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.venue-detail p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.venue-detail .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.venue-detail .btn:hover {
+    background-color: #0056b3;
+}
+
+

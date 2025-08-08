@@ -1,0 +1,65 @@
+/* style.css */
+
+/* Styling for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 220px;
+    background-color: #f8f9fa;
+}
+
+.sidebar-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding-left: 240px; /* Adjust for sidebar width */
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .container-fluid {
+        padding-left: 0;
+    }
+}
