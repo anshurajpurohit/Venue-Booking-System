@@ -1,58 +1,16 @@
-🎉 Venue Booking System – PHP & MySQL Project
-The Venue Booking System is a web-based platform developed using PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap that allows users to search, view, and book venues for various events such as weddings, parties, meetings, and more.
+# Venue Booking System
 
-🔑 Features
-👥 User Module
-User Registration & Login
+## Overview
+A PHP‑based web application enabling users to search, view, and book venues.
+Ideal for wedding planners, event organizers, and small businesses.
 
-Browse venues by category and capacity
+## Features
+- **User Module**: Registration, venue browsing, booking, feedback.
+- **Admin Module**: Venue management, booking oversight, reporting dashboards.
+- **Modular Structure**: Organized directories for admin, user, assets, and includes.
+- **Tech Stack**: PHP, MySQL, Bootstrap, JavaScript, responsive UI.
 
-View venue details with image slider
-
-Online booking with payment gateway integration (Razorpay / UPI)
-
-View and manage bookings
-
-Provide feedback
-
-🛠️ Admin Module
-Secure Admin Login
-
-Add, edit, delete venue categories
-
-Add, update, remove venues
-
-View & manage bookings
-
-Generate reports (users, payments, feedback)
-
-🧱 Tech Stack
-Frontend: HTML, CSS, JavaScript, Bootstrap
-
-Backend: PHP
-
-Database: MySQL (WAMP Server)
-
-Design: Responsive layout with centralized CSS/JS
-
-📁 Project Modules
-Home Page with dynamic venue display and image slider
-
-Booking page with availability check
-
-Admin Dashboard with data overview
-
-Reports: Users, Bookings, Payments, Feedback
-
-Modular code structure with reusable header/footer files
-
-📌 Highlights
-Fully working booking system with real-time data
-
-Modular, clean, and scalable codebase
-
-Good for academic mini and major projects (MCA/BCA/BTech)
-
-Admin login
-username   : admin
-Password: admin@123
+## Getting Started
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/anshurajpurohit/Venue-Booking-System.git
