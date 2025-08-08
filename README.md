@@ -14,3 +14,7 @@ Ideal for wedding planners, event organizers, and small businesses.
 1. Clone the repo:
    ```bash
    git clone https://github.com/anshurajpurohit/Venue-Booking-System.git
+
+# Admin Login
+username = admin
+password = admin123
