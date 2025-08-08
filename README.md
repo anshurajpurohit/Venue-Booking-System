@@ -52,3 +52,7 @@ Fully working booking system with real-time data
 Modular, clean, and scalable codebase
 
 Good for academic mini and major projects (MCA/BCA/BTech)
+
+Admin login
+username   : admin
+Password: admin@123
