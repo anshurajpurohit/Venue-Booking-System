@@ -33,8 +33,6 @@ Backend: PHP
 
 Database: MySQL (WAMP Server)
 
-Payment Integration: Razorpay / UPI
-
 Design: Responsive layout with centralized CSS/JS
 
 📁 Project Modules
